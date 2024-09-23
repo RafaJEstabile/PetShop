@@ -1,0 +1,343 @@
+
+.cabeçalho{
+   background-color: #4F4F4F;
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   margin-top: 10spx; /* Move o header para cima */
+   border-radius: 15px; /* Arredonda as bordas do header */
+}
+
+.logo{
+   display: flex;
+   padding: 0px 0px;
+   height: 130px;
+}
+
+.titulo{
+   padding: 0px 0px;
+   height: 10%;
+   color: black;
+
+}
+
+.redes-sociais {
+   display: flex;
+   gap: 20px; /* Espaçamento entre as divs */
+}
+
+.insta, .whats, .email {
+   display: flex;
+   height: 50px;
+   width: 60px;
+   align-items: center;
+   justify-content: center;
+   padding: 0; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+   cursor: pointer; /* Mudar o cursor para uma mão quando passar sobre o ícone */
+}
+
+.insta img, .whats img, .email img {
+   height: 90%; 
+   transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.insta:hover, .whats:hover, .email:hover {
+   transform: scale(1.1); /* Aumentar o tamanho do ícone no hover */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionar sombra para dar um efeito de destaque */
+}
+
+.insta:hover img, .whats:hover img, .email:hover img {
+   transform: scale(1.1); /* Aumentar o tamanho do ícone no hover */
+}
+
+.fotos {
+   display: flex;
+   padding: 30px 20px;
+   gap: 30px;
+   justify-content: center; 
+   align-items: center; 
+}
+
+.fotos img {
+   width: 100%; 
+   height: auto; 
+   border-radius: 15px; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.fotos img:hover {
+   transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para dar um efeito de destaque */
+}
+
+/* Ajustes de altura para cada animal */
+.gato img {
+   height: 300px;
+   object-fit: cover; /* Corta a imagem para preencher o contêiner sem distorção */
+}
+
+.cachorro img {
+   height: 200px;
+   object-fit: cover;
+}
+
+.ourico img {
+   height: 290px;
+   object-fit: cover;
+}
+
+.explicacao {
+   padding: 30px 40px; 
+   text-align: left; 
+   line-height: 1.8;
+   background-color: #ffffff; /* Fundo branco simples */
+   border-left: 5px solid #45a049; /* Barra lateral colorida para destaque */
+   max-width: 900px; /* Aumenta a largura máxima para um layout mais expansivo */
+   margin: 40px auto; 
+   font-family: 'Arial', sans-serif; 
+   color: #333; 
+}
+
+.explicacao h2 {
+   text-align: left; /* Alinha o título à esquerda */
+   margin-bottom: 15px; /* Menos espaço abaixo do título */
+   font-size: 1.8rem; /* Tamanho do título ligeiramente menor */
+   color: #2c3e50; /* Cor do título em um tom escuro, mas não preto */
+   border-bottom: 2px solid #45a049; /* Linha inferior verde para destaque */
+   padding-bottom: 10px; /* Espaço entre o texto do título e a linha inferior */
+}
+
+.explicacao p {
+   margin-bottom: 20px; /* Espaçamento maior entre parágrafos */
+   color: black; /* Tom de cinza médio para um texto mais suave */
+   font-size: 1rem; /* Tamanho de fonte padrão */
+}
+
+.explicacao a {
+   color: black; /* Cor de link em azul moderno */
+   text-decoration: none; /* Remove o sublinhado dos links */
+   border-bottom: 2px solid green; /* Adiciona uma linha inferior aos links */
+   transition: border-bottom 0.3s ease, color 0.3s ease; /* Animação suave na linha inferior e na cor */
+}
+
+.explicacao a:hover {
+   color: green; /* Muda a cor do link ao passar o mouse */
+   border-bottom: 2px solid green; /* Muda a cor da linha inferior ao passar o mouse */
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f9f9f9;
+   color: #333;
+   justify-content: center;
+   align-items: center;
+}
+
+.comment-section {
+   max-width: 600px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+   margin-bottom: 20px;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 14px;
+}
+
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+button:hover {
+   background-color: #45a049;
+}
+
+#comments-container {
+   margin-top: 30px;
+}
+
+.comment {
+   background-color: #f1f1f1; /* Faixa de fundo no comentário */
+   border-left: 4px solid #4CAF50; /* Faixa na borda esquerda */
+   padding: 15px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
+.comment h4 {
+   margin: 0 0 10px;
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+}
+
+.comment p {
+   margin: 0;
+   font-size: 14px;
+   color: #555;
+}
+
+.rodape {
+   background-color: #4F4F4F;
+   height: 200px; /* Aumentei a altura para acomodar os botões */
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Centraliza os botões horizontalmente no rodapé */
+   padding: 0 20px;
+   position: relative; /* Garante que o rodapé contenha o conteúdo */
+   border-radius: 15px; /* Arredonda as bordas do header */
+}
+
+.container {
+   display: flex;
+   justify-content: center; /* Centraliza os botões horizontalmente */
+   align-items: center; /* Alinha verticalmente ao centro */
+   gap: 20px; /* Espaçamento entre os botões */
+   flex-wrap: wrap; /* Permite que os botões quebrem para uma nova linha, se necessário */
+   width: 100%; /* Garante que o contêiner ocupe toda a largura */
+   box-sizing: border-box; /* Inclui padding e border na largura e altura */
+   margin-top: 0; /* Remova o margin-top negativo */
+   position: relative;
+}
+
+.button {
+   flex: 1 1 300px; /* Define uma largura fixa de 300px e permite que os botões encolham, se necessário */
+   padding: 20px;
+   background-color: #282828;
+   color: #fff;
+   border-radius: 60px;
+   text-decoration: none;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+}
+
+.button span {
+   font-size: 20px;
+   position: relative;
+   z-index: 999999;
+}
+
+.button::before {
+   content: '';
+   background-color: #45a049;
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   transition: width .8s, height .8s;
+   z-index: 0;
+}
+
+.button:hover::before {
+   width: 1000px;
+   height: 1000px;
+}
+
+.cliente{
+   padding: 20px 500px;
+   justify-content: center;
+}
+
+.billy, .betove, .barner, .dog, .fiuk, .chiquinho {
+   display: flex;
+   padding: 10px; /* Ajuste o padding para adicionar mais ou menos espaçamento */
+   height: 290px;
+   align-items: center;
+   justify-content: center;
+}
+
+.carousel-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+   width: 100%;
+}
+
+.carousel {
+   display: flex;
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+   width: 100%;
+   scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+   display: none;
+}
+
+.carousel div {
+   min-width: 290px;
+   height: 290px;
+   margin-right: 20px;
+   background-color: #f0f0f0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.2em;
+   font-weight: bold;
+   border-radius: 8px;
+   box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+}
+
+.carousel img {
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorcer */
+   border-radius: 8px; /* Canto arredondado nas imagens */
+}
+
+.prev, .next {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 1.5em;
+   border-radius: 50%;
+   z-index: 1;
+}
+
+.prev {
+   left: 10px;
+}
+
+.next {
+   right: 10px;
+}
+
+.prev:hover, .next:hover {
+   background-color: grey;
+}

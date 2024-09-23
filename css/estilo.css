@@ -1,0 +1,106 @@
+.cabeçalho {
+   background-color: #4F4F4F;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 20px;
+   margin-top: -20px; /* Move o header para cima */
+   border-radius: 15px; /* Arredonda as bordas do header */
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   height: 100px; /* Tamanho da logo */
+}
+
+.titulo h1 {
+   margin-left: 1px; /* Aproxima o título da logo */
+   color: white;
+   font-size: 24px;
+}
+
+.localizacao {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.localizacao iframe {
+   width: 400px;
+   height: 300px;
+   border: 0;
+}
+
+#endereco {
+   margin-top: 10px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 18px;
+   color: #333;
+   text-align: center;
+   transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.rodape {
+   background-color: #4F4F4F;
+   height: 200px; /* Aumentei a altura para acomodar os botões */
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Centraliza os botões horizontalmente no rodapé */
+   padding: 1 10px;
+   position: relative; /* Garante que o rodapé contenha o conteúdo */
+   border-radius: 15px; /* Arredonda as bordas do header */
+}
+
+.container {
+   display: flex;
+   justify-content: center; /* Centraliza os botões horizontalmente */
+   align-items: center; /* Alinha verticalmente ao centro */
+   gap: 20px; /* Espaçamento entre os botões */
+   flex-wrap: wrap; /* Permite que os botões quebrem para uma nova linha, se necessário */
+   width: 50%; /* Garante que o contêiner ocupe toda a largura */
+   box-sizing: border-box; /* Inclui padding e border na largura e altura */
+   margin-top: 0; /* Remova o margin-top negativo */
+   position: relative;
+}
+
+.button {
+   flex: 1 1 300px; /* Define uma largura fixa de 300px e permite que os botões encolham, se necessário */
+   padding: 20px;
+   background-color: #282828;
+   color: #fff;
+   border-radius: 50px;
+   text-decoration: none;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+}
+
+.button span {
+   font-size: 20px;
+   position: relative;
+}
+
+.button::before {
+   content: '';
+   background-color: #45a049;
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   transition: width .8s, height .8s;
+   z-index: 0;
+}
+
+.button:hover::before {
+   width: 1000px;
+   height: 1000px;
+} 

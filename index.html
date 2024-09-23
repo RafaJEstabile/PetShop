@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo1.png">
+    <title>Dinastia Animal</title>
+</head>
+<body>
+
+    <header class="cabeçalho">
+
+        <div class="logo">
+            <img src="img/logo1.png">
+            <a hreaf ='file:///home/jhonatan/Documentos/phpatv/index.html'></hreaf>
+            <div class="titulo">
+                <h2>Dinastia</h2>
+                <h2>Animal</h2>
+            </div>
+        </div>
+    
+        <div class="redes-sociais">
+            <div class="insta">
+                <a href=""></a>
+                <img src="img/instagram.png">
+            </div>
+            <div class="whats">
+                <img src="img/whats.png">
+            </div>
+            <div class="email">
+                <img src="img/email.png">
+            </div>
+        </div>
+        
+    </header>
+    <div class="fotos">
+        <div class="gato">
+            <img src="img/gato.png" alt="Imagem de um gato">
+        </div>
+        <div class="cachorro">
+            <img src="img/golden.png" alt="Imagem de um cachorro">
+        </div>
+        <div class="ourico">
+            <img src="img/ourico1.jpg" alt="Imagem de um ouriço">
+        </div>
+     </div>
+     
+     <div class="explicacao">
+        <h2>Informações Importantes</h2>
+        <p>Os animais de estimação são parte importante de nossas vidas e merecem todo o cuidado e atenção. Aqui você encontrará dicas e informações para garantir o bem-estar do seu pet.</p>
+        <p>Saiba mais sobre os cuidados específicos para cada espécie, desde gatos e cachorros até animais exóticos como ouriços. <a href="html/sobre.html">Clique aqui</a> para ler mais.</p>
+     </div>
+
+     <div class="cliente">
+        <h2> Alguns dos nossos clientes</h2>
+    </div>
+    <div class="carousel-container">
+        <button class="prev" onclick="scrollCarouselLeft()">&#8249;</button>
+        <div class="carousel">
+            <div class="billy"><img src="img/billy.jpeg"></div>
+            <div class="betove"><img src="img/betove.jpeg"></div>
+            <div class="barner"><img src="img/barner.jpeg"></div>
+            <div class="dog"><img src="img/dog.jpeg"></div>
+            <div class="fiuk"><img src="img/fiuk.jpeg"></div>
+            <div class="chiquinho"><img src="img/chiquinho.jpeg"></div>
+        </div>
+        <button class="next" onclick="scrollCarouselRight()">&#8250;</button>
+    </div>
+    <script src="js/carrosel.js"></script>
+
+    
+
+    <div class="comment-section">
+        <h2>Comentários</h2>
+        <form id="comment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="comments-container">
+            <h3>Comentários anteriores</h3>
+            <!-- Os comentários inseridos serão mostrados aqui -->
+        </div>
+    </div>
+
+    <script src="js/coment.js"></script>
+
+    <footer class="rodape">
+        <div class="container">
+            <a href="html/info.html" class="button"><span>Saiba mais sobre nos</span></a>
+            <a href="html/dicas.html" class="button"><span>Dicas sobre seu Pet</span></a>
+        </div>
+    </footer>
+    <script src="js/efeito.js"></script>
+
+    
+</body>
+</html>
